@@ -25,14 +25,16 @@ class Main extends React.Component {
 
   handleButtonClick = e => {
     e.preventDefault();
-    this.setState({ stuff: Math.floor(Math.random() * 20 + 1) });
+    this.setState({ stuff: Math.ceil(Math.random() * 99) });
   };
 
   render() {
     return (
       <div>
-        <h4>{this.state.stuff}</h4>
-        <button onClick={this.handleButtonClick}>Click Me</button>
+        <h4>{this.state.stuff} {this.state.stuff}</h4>
+        <button onClick={this.handleButtonClick}>K7ic M3</button>
+        <h4> </h4>
+        <h4>{this.state.stuff} {this.state.stuff}</h4>
       </div>
     );
   }
